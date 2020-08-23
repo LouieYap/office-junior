@@ -9,7 +9,7 @@ h1 {
 
 body{
    background-color: #F0F0F0;
-   width:100%;
+   color: #F0F0F0;
 }
 
 
@@ -18,11 +18,12 @@ nav {
   position: sticky;
   top: 0;
   position: -webkit-sticky; /* Safari */
+  z-index: 99;
 
 }
 
 nav li {
-      border-right: 2px solid white;
+      border-right: 2px solid #F0F0F0;
       padding: 0 25px 0 15px;
       margin: 10px;
 }
@@ -47,7 +48,6 @@ ul  {
 }
 
 .img-banner-container {
-  width:100%;
   height: 500px;
 }
 
@@ -90,31 +90,46 @@ animation: fadeIn ease 1.5s;
 }
 
 
-.card-container {
-
-    max-width: 80%;
-    margin: auto;
-    padding : 20px;
-}
-
 .featured-products-container {
   margin: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 
 .featured-product-card  {
+  border: solid 1px #008e97;
+  position:relative;
   margin-bottom: 20px;
   background-color: grey;
-    width: 480px;
-    height: 520px;
-  overflow: hidden;
-background-size: cover;
-background-position: center;
-background-image: url('img/featured-product1.png');
+  width: 480px;
+  min-width: 480px;
+  height: 580px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('img/featured-product1.png');
+}
 
+.featured-product-btn-container{
+  position: absolute;
+  bottom: 15%;
+  right:2.5%;
+  width: 200px;
+}
+.featured-product-btn-container button{
+  width: 100%;
+  height: 40px;
+  background-color: #008e97;
+    border-radius: 4px;
+    border: 1px solid #F0F0F0;
+    color: #F0F0F0;
+   outline:none;
+}
+
+.featured-product-btn-container button:hover{
+    background-color: #2ecc71;
 }
 
 
@@ -122,7 +137,7 @@ footer {
   bottom: 0px;
   width: 100%;
   background-color: #008e97;
-  color: white;
+  color: #F0F0F0;
 
 }
 
@@ -143,10 +158,22 @@ footer {
 
 .box .content{
   margin: 20px 0 0 0;
+  position:relative;
+}
+
+
+.box .content::after {
+  position:absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 15%;
+  background: #F0F0F0;
 }
 
 .left .content p{
   text-align: justify;
+  color: 	#F0F0F0;
 }
 
 .left .content .social{
@@ -159,7 +186,7 @@ footer {
 .left .content .social a span{
   height: 40px;
   width: 40px;
-  background: blue;
+  background: #3b5998;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -168,14 +195,10 @@ footer {
 
 }
 
-.left .content .social a span:hover{
-background: #f12020
-
-}
 
 .center .content .fas {
   font-size 1.4375rem;
-  background: #1a1a1a;
+  background: #f38424;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -202,7 +225,7 @@ background: #f12020
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color: #656565;
+  color: #F0F0F0;
 }
 
 .right form .msg {
@@ -226,11 +249,11 @@ background: #f12020
 }
 
 .right form .btn button:hover{
-  background-color: red;
+  background-color: #f12020;
 }
 
 .bottom center{
- paddint: 5px;
+ padding: 5px;
  font-size: 0.9375rem;
  background: #151515
 
@@ -243,8 +266,8 @@ background: #f12020
 .right form input, .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
-  background: #151515;
-  padding-left: 10px;
+  background: #F0F0F0;
+  padding:0;
   border: 1px solid #222222;
 }
 
@@ -261,6 +284,9 @@ background: #f12020
 @media screen and (max-width: 900px) {
     .main-content{
       display: block;
+    }
 
+    .img-banner-container {
+      display:none;
     }
 }
