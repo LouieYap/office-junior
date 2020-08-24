@@ -104,11 +104,10 @@ animation: fadeIn ease 1.5s;
   position:relative;
   margin-bottom: 20px;
   background-color: grey;
-  width: 480px;
-  min-width: 480px;
+  min-width: 23rem;
+  width: 30rem;
   height: 580px;
-  overflow: hidden;
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-image: url('img/featured-product1.png');
 }
