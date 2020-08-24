@@ -104,7 +104,7 @@ animation: fadeIn ease 1.5s;
   position:relative;
   margin-bottom: 20px;
   background-color: grey;
-  min-width: 352px;
+  min-width: 344px;
   width: 480px;
   height: 580px;
   background-size: 100% 100%;
@@ -114,9 +114,9 @@ animation: fadeIn ease 1.5s;
 
 .featured-product-btn-container{
   position: absolute;
-  bottom: 15%;
-  right:2.5%;
-  width: 200px;
+  bottom: 40px;
+  right:5px;
+  width: 44%;
 }
 .featured-product-btn-container button{
   width: 100%;
