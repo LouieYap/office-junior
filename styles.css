@@ -106,7 +106,7 @@ animation: fadeIn ease 1.5s;
   background-color: grey;
   min-width: 344px;
   width: 480px;
-  height: 580px;
+height: 74vh;
   background-size: 100% 100%;
   background-position: center;
   background-image: url('img/featured-product1.png');
