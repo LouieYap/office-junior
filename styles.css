@@ -106,7 +106,7 @@ animation: fadeIn ease 1.5s;
   background-color: grey;
   min-width: 344px;
   width: 480px;
-height: 74vh;
+  height: 580px;
   background-size: 100% 100%;
   background-position: center;
   background-image: url('img/featured-product1.png');
@@ -114,7 +114,7 @@ height: 74vh;
 
 .featured-product-btn-container{
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   right:5px;
   width: 44%;
 }
@@ -289,4 +289,11 @@ footer {
     .img-banner-container {
       display:none;
     }
+}
+
+
+@media screen and (max-width: 450px) {
+  .featured-product-card  {
+      height: 420px;
+  }
 }
