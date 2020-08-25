@@ -15,12 +15,16 @@
         <img class="logo" src="img/logo.png" alt="office-junior logo">
         </header>
           <nav>
-            <ul>
-              <li><a class="nav-link" href="#">Home</a></li>
+            <ul id="topnav" class="topnav">
+              <li><a class="nav-link" href="index.html">Home</a></li>
               <li><a class="nav-link" href="#about-us">About Us</a></li>
               <li><a class="nav-link" href="#">Products</a></li>
-              <li><a class="nav-link" href="#">Contact Us</a></li>
+              <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars">  </a></i>
             </ul>
+
+
           </nav>
 
 
@@ -39,13 +43,13 @@
 
         <div class ="featured-product-card fade-in">
           <div class="featured-product-btn-container">
-            <button style="cursor: pointer; "type="button" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sales.officejunior@gmail.com&su=Inquiry&body=Hi,%20is%20item%20ROHBI-DENVER%20available%3F', '_blank'); return false;" name="INQUIRE">INQUIRE ITEM</button>
+                  <button style="cursor: pointer; "type="button" onclick="location.href='mailto:sales.officejunior@gmail.com?&subject=Item%20Inquiry&body=Hi,%20is%20item%20ROHBI-DENVER%20available%3F';" name="INQUIRE">INQUIRE ITEM</button>
           </div>
         </div>
 
         <div class ="featured-product-card fade-in">
           <div class="featured-product-btn-container">
-            <button style="cursor: pointer; "type="button" onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=sales.officejunior@gmail.com&su=Inquiry&body=Hi,%20is%20item%20ROHBI-DENVER%20available%3F', '_blank'); return false;" name="INQUIRE">INQUIRE ITEM</button>
+                <button style="cursor: pointer; "type="button" onclick="location.href='mailto:sales.officejunior@gmail.com?&subject=Item%20Inquiry&body=Hi,%20is%20item%20ROHBI-DENVER%20available%3F';" name="INQUIRE">INQUIRE ITEM</button>
           </div>
 
         </div>
@@ -58,7 +62,7 @@
         <div class="main-content">
             <div class="left box">
               <h2>About Us</h2>
-              <div class="content">
+              <div id="about-us" class="content">
                 <p>Our company was founded to close the gap between industry needs and office furniture suppliers. By choosing Office Junior, you get the products you need,
                    right when you need them. We guarantee the best customer service from our team of experts and we’ll make sure to provide top quality products at unbeatable prices.
                    Contact us today to learn more about what we can do for you.</p>
@@ -88,7 +92,7 @@
 
             <div class="right box">
               <h2>Contact Us</h2>
-              <div class="content">
+              <div id="contact-us" class="content">
                 <form action="#">
                   <div class= "email">
                     <div class="text">Email *</div>
@@ -109,7 +113,7 @@
         </div>
         <div class="bottom">
           <center>
-            <span class="credit">Created By Louie Hans Yap |</span>
+            <span class="credit">Created By Office Junior |</span>
             <span class = "far fa-copyright"></span><span> 2020 All rights reserved.</span>
           </center>
 
@@ -118,6 +122,17 @@
       </footer>
 
   </body>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "topnav") {
+    x.className +=" responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 
 
