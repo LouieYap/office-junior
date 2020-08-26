@@ -1,6 +1,9 @@
 *{
   font-family: sans-serif, serif;
   font-size: 16px;
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -17,15 +20,18 @@ nav {
   background-color: #008e97;
   top: 0;
   position: -webkit-sticky; /* Safari */
-    position: sticky; 
+    position: sticky;
   z-index: 99;
-
 }
 
 nav li {
       //border-right: 2px solid #F0F0F0;
-      padding: 0 25px 0 15px;
+      padding: 0 15px 0 15px;
       margin: 10px;
+}
+
+.topnav {
+      border-bottom: 1px solid #656565;
 }
 
 
@@ -275,7 +281,7 @@ footer {
   display:flex;
   list-style-type: none;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   flex-wrap: wrap;
   padding:
 }
@@ -285,6 +291,7 @@ footer {
 
 .responsive li:not(:last-child) {
   width: 100%;
+  text-align: center;
 }
 
 .responsive .nav-link {
@@ -297,7 +304,10 @@ footer {
   margin-right: -5px;
 }
 
-
+.nav-link a::before {
+  content: "";
+  border-bottom: 2px solid red;
+}
 
 .nav-link {
   order:2;
