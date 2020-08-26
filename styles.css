@@ -34,6 +34,9 @@ nav li {
       border-bottom: 1px solid #656565;
 }
 
+#about-us{
+  scroll-margin-top: 200px;
+}
 
 .nav-link {
    color: #F5F5F5;
