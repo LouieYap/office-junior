@@ -16,7 +16,6 @@ body{
 nav {
   background-color: #008e97;
   top: 0;
-  position: -webkit-sticky; /* Safari */
   z-index: 99;
 
 }
