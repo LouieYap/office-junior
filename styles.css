@@ -345,7 +345,7 @@ footer {
 
 @media screen and (max-width: 501px) {
   .featured-product-card  {
-      height: 450px;
+      height: 400px;
   }
 }
 
