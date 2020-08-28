@@ -4,6 +4,12 @@
   padding:0;
   margin:0;
   box-sizing: border-box;
+
+
+}
+
+.img-banner-container {
+  display:none;
 }
 
 h1 {
@@ -91,6 +97,24 @@ animation: fadeIn ease 1.5s;
 @-ms-keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -335,10 +359,6 @@ footer {
     .main-content{
       display: block;
     }
-
-    .img-banner-container {
-    //  display:none;
-    }
 }
 
 
@@ -396,7 +416,4 @@ footer {
       height: 580px;
   }
 
-  .img-banner-container {
-      height: 75vh;
-  }
 }
