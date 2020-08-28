@@ -52,7 +52,8 @@ nav li {
 }
 
 .img-banner-container {
-  height: 500px;
+  width:100%;
+    height: 25vh;
 }
 
 .img-banner-container img {
@@ -337,14 +338,14 @@ footer {
     }
 
     .img-banner-container {
-      display:none;
+    //  display:none;
     }
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 501px) {
   .featured-product-card  {
-      height: 430px;
+      height: 450px;
   }
 }
 
