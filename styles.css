@@ -1,13 +1,13 @@
 *{
   font-family: sans-serif, serif;
-  font-size: 16px;
+  font-size: 18px;
   padding:0;
   margin:0;
   box-sizing: border-box;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 body{
@@ -108,7 +108,7 @@ animation: fadeIn ease 1.5s;
   position:relative;
   margin-bottom: 20px;
   background-color: grey;
-  min-width: 310px;
+  min-width: 270px;
   width: 480px;
   height: 580px;
   background-size: 100% 100%;
@@ -130,6 +130,7 @@ animation: fadeIn ease 1.5s;
     border: 1px solid #F0F0F0;
     color: #F0F0F0;
    outline:none;
+   font-size: 14px;
 }
 
 .featured-product-btn-container button:hover{
@@ -155,14 +156,18 @@ footer {
 }
 
 .box h2{
-  font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 16px;
 }
 
 .box .content{
   margin: 20px 0 0 0;
   position:relative;
+}
+
+.center .content .place .text{
+  font-size: 16px;
 }
 
 
@@ -178,6 +183,7 @@ footer {
 .left .content p{
   text-align: justify;
   color: 	#F0F0F0;
+  font-size: 16px;
 }
 
 .left .content .social{
@@ -201,7 +207,6 @@ footer {
 
 
 .center .content .fas {
-  font-size 1.4375rem;
   background: #f38424;
   height: 45px;
   width: 45px;
@@ -217,7 +222,6 @@ footer {
 }
 
 .center .content .text{
-  font-size: 1.0625rem;
   font-weight: 500;
   padding-left: 10px;
 }
@@ -227,7 +231,7 @@ footer {
 }
 
 .right form .text{
-  font-size: 1.0625rem;
+  font-size: 16px;
   margin-bottom: 2px;
   color: #F0F0F0;
 }
@@ -246,7 +250,7 @@ footer {
   border:none;
   outline:none;
   background: :#f12020;
-  font-size: 1.0625rem;
+  font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: .3s;
@@ -289,10 +293,8 @@ footer {
   padding:
 }
 
-.responsive {
-}
 
-.responsive li:not(:last-child) {
+.responsive li {
   width: 100%;
   text-align: center;
 }
@@ -317,9 +319,14 @@ footer {
 
 .topnav > li > a {
   color: #F0F0F0;
+  text-decoration: none;
 
 }
 
+.topnav > li > a:hover {
+  text-decoration: underline;
+
+}
 .right form input{
   height: 35px;
 }
@@ -337,7 +344,7 @@ footer {
 
 @media screen and (max-width: 450px) {
   .featured-product-card  {
-      height: 420px;
+      height: 430px;
   }
 }
 
@@ -349,6 +356,40 @@ footer {
 .icon {
   display: block;
 }
+}
+  @media all and (min-width: 628px) {
+.responsive li:not(:last-child) {
+  width:auto;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .featured-product-card  {
+      height: 320px;
+  }
+}
+
+/* Tablet menu */
+@media all and (min-width: 801px) {
+  .featured-product-card  {
+      width: 280px;
+      height: 320px;
+  }
+}
 
 
+/* Desktop menu */
+@media all and (min-width: 1025px) {
+  .featured-product-card  {
+      width: 320px;
+      height: 380px;
+  }
+}
+
+/* Big Desktop menu */
+@media all and (min-width: 1281px) {
+  .featured-product-card  {
+      width: 480px;
+      height: 580px;
+  }
 }
