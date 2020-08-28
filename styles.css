@@ -52,8 +52,7 @@ nav li {
 }
 
 .img-banner-container {
-  width:100%;
-    height: 25vh;
+    height: 20vh;
 }
 
 .img-banner-container img {
@@ -345,7 +344,7 @@ footer {
 
 @media screen and (max-width: 501px) {
   .featured-product-card  {
-      height: 400px;
+      height: 410px;
   }
 }
 
@@ -385,6 +384,9 @@ footer {
       width: 320px;
       height: 380px;
   }
+  .img-banner-container {
+      height: 55vh;
+  }
 }
 
 /* Big Desktop menu */
@@ -392,5 +394,9 @@ footer {
   .featured-product-card  {
       width: 480px;
       height: 580px;
+  }
+
+  .img-banner-container {
+      height: 75vh;
   }
 }
