@@ -28,18 +28,28 @@
           </nav>
 
 
-      <div class ="carousel-container">
-         <div class="carousel-slide">
-          <img src="img/banner2.png" id="lastClone" alt="office-junior banner">
-          <img src="img/banner.png" alt="office-junior banner">
-          <img src="img/banner1.png" alt="office-junior banner">
-          <img src="img/banner2.png" alt="office-junior banner">
-          <img src="img/banner.png" id="firstClone" alt="office-junior banner">
-          </div>
-      </div>
+      <div class="container">
+         <div class="slides">
+           <div class="slide">
+            <img src="img/banner.png" alt="office-junior banner">
+           </div>
+           <div class="slide">
+            <img src="img/banner1.png" alt="office-junior banner">
+           </div>
+           <div class="slide">
+              <img src="img/banner2.png" alt="office-junior banner">
+           </div>
+         </div>
+         <div class="slide-controls">
+           <button id="prev-btn">
+             <i class="fas fa-chevron-left"></i>
+           </button>
+           <button id="next-btn">
+             <i class="fas fa-chevron-right"></i>
+           </button>
+         </div>
+       </div>
 
-      <button id ="prevBtn">Prev</button>
-      <button id ="nextBtn">Next</button>
 
       <h1 style = "border-bottom: 1px solid #008e97; margin: auto; text-align:center; width: 80%; margin-top: 30px; color: #008e97;">Featured Products</h1>
       <div class= "featured-products-container">
@@ -142,44 +152,78 @@ function myFunction() {
   }
 }
 
+const slideContainer = document.querySelector('.container');
+const slide = document.querySelector('.slides');
+const nextBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+const interval = 3000;
 
-const carouselSlide = document.querySelector('.carousel-slide')
-const carouselImages = document.querySelectorAll('.carousel-slide img')
+let slides = document.querySelectorAll('.slide');
+let index = 1;
+let slideId;
 
-//buttons
-const prevBtn = document.querySelector('#prevBtn');
-const nextBtn = document.querySelector('#nextBtn');
+const firstClone = slides[0].cloneNode(true);
+const lastClone = slides[slides.length - 1].cloneNode(true);
 
-let counter = 1;
-const size = carouselImages[0].clientWidth;
-console.log(size);
+firstClone.id = 'first-clone';
+lastClone.id = 'last-clone';
 
-carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+slide.append(firstClone);
+slide.prepend(lastClone);
 
-//Button Listeners
+const slideWidth = slides[index].clientWidth;
 
-nextBtn.addEventListener('click',() =>{
-   if(counter)
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter++;
-    carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+slide.style.transform = `translateX(${-slideWidth * index}px)`;
+
+console.log(slides);
+
+const startSlide = () => {
+  slideId = setInterval(() => {
+    moveToNextSlide();
+  }, interval);
+};
+
+const getSlides = () => document.querySelectorAll('.slide');
+
+slide.addEventListener('transitionend', () => {
+  slides = getSlides();
+  if (slides[index].id === firstClone.id) {
+    slide.style.transition = 'none';
+    index = 1;
+    slide.style.transform = `translateX(${-slideWidth * index}px)`;
+  }
+
+  if (slides[index].id === lastClone.id) {
+    slide.style.transition = 'none';
+    index = slides.length - 2;
+    slide.style.transform = `translateX(${-slideWidth * index}px)`;
+  }
 });
 
-prevBtn.addEventListener('click',() =>{
-    carouselSlide.style.transition = "transform 0.4s ease-in-out";
-    counter--;
-    carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+const moveToNextSlide = () => {
+  slides = getSlides();
+  if (index >= slides.length - 1) return;
+  index++;
+  slide.style.transition = '.7s ease-out';
+  slide.style.transform = `translateX(${-slideWidth * index}px)`;
+};
+
+const moveToPreviousSlide = () => {
+  if (index <= 0) return;
+  index--;
+  slide.style.transition = '.7s ease-out';
+  slide.style.transform = `translateX(${-slideWidth * index}px)`;
+};
+
+slideContainer.addEventListener('mouseenter', () => {
+  clearInterval(slideId);
 });
 
-carouselSlide.addEventListener('transitionend', () => {
-    console.log(counter)
-    if(carouselImages[counter].id === 'lastClone'){
-      console.log("test");
-        carouselSlide.style.transition = "none";
-        counter = carouselImages.length -2;
-        carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
-    }
-});
+slideContainer.addEventListener('mouseleave', startSlide);
+nextBtn.addEventListener('click', moveToNextSlide);
+prevBtn.addEventListener('click', moveToPreviousSlide);
+
+startSlide();
 
 
 </script>
