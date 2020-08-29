@@ -119,22 +119,24 @@ animation: fadeIn ease 1.5s;
 
 
 .featured-products-container {
-  margin: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  width:100%
 }
 
 
 .featured-product-card  {
   border: solid 1px #008e97;
   position:relative;
-  margin-bottom: 20px;
+  margin: 0 40px 20px 40px;
   background-color: grey;
-  min-width: 270px;
-  width: 480px;
-  height: 580px;
+  min-width: 240px;
+  width: 22vw;
+  height: 52vh;
   background-size: 100% 100%;
   background-position: center;
   background-image: url('img/featured-product1.png');
@@ -355,6 +357,12 @@ footer {
   height: 35px;
 }
 
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
     .main-content{
       display: block;
@@ -364,7 +372,7 @@ footer {
 
 @media screen and (max-width: 501px) {
   .featured-product-card  {
-      height: 360px;
+    //  height: 360px;
   }
 }
 
@@ -383,37 +391,42 @@ footer {
 }
 }
 
+/*
 @media screen and (max-width: 320px) {
   .featured-product-card  {
-      height: 320px;
+      height: 300px;
+  }
+}*/
+
+
+
+
+/* Desktop menu*/
+@media all and (max-width: 1400px) {
+  .featured-product-card  {
+    min-width: 240px;
+    height: 26vh;
+      margin: 0 20px 10px 20px;
+  }
+
+}
+
+@media all and (max-width: 980px) {
+  .featured-product-card  {
+      min-width: 200px;
+      height: 26vh;
+        margin: 0 10px 10px 10px;
   }
 }
 
-/* Tablet menu */
-@media all and (min-width: 801px) {
+@media all and (max-width: 680px) {
+.featured-products-container {
+  display:block;
+
+  }
   .featured-product-card  {
-      width: 280px;
-      height: 320px;
+      margin: 0 auto 20px auto;
+      min-width: 280px;
+      height: 46vh;
   }
-}
-
-
-/* Desktop menu */
-@media all and (min-width: 1025px) {
-  .featured-product-card  {
-      width: 320px;
-      height: 380px;
-  }
-  .img-banner-container {
-      height: 55vh;
-  }
-}
-
-/* Big Desktop menu */
-@media all and (min-width: 1500px) {
-  .featured-product-card  {
-      width: 480px;
-      height: 580px;
-  }
-
 }
