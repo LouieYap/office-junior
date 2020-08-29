@@ -215,11 +215,11 @@ const moveToPreviousSlide = () => {
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
 };
 
-slideContainer.addEventListener('mouseenter', () => {
+slideContainer.addEventListener('mouseenter touchstart', () => {
   clearInterval(slideId);
 });
 
-slideContainer.addEventListener('mouseleave', startSlide);
+slideContainer.addEventListener('mouseleave touchend', startSlide);
 nextBtn.addEventListener('click', moveToNextSlide);
 prevBtn.addEventListener('click', moveToPreviousSlide);
 
