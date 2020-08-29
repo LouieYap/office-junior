@@ -28,18 +28,18 @@
           </nav>
 
 
-      <div class ="img-banner-container fade">
-          <img class="fade-in" src="img/banner.png" alt="office-junior banner">
+      <div class ="carousel-container">
+         <div class="carousel-slide">
+          <img src="img/banner2.png" id="lastClone" alt="office-junior banner">
+          <img src="img/banner.png" alt="office-junior banner">
+          <img src="img/banner1.png" alt="office-junior banner">
+          <img src="img/banner2.png" alt="office-junior banner">
+          <img src="img/banner.png" id="firstClone" alt="office-junior banner">
+          </div>
       </div>
 
-      <div class ="img-banner-container fade">
-          <img class="fade-in" src="img/banner1.png" alt="office-junior banner">
-      </div>
-
-      <div class ="img-banner-container fade">
-          <img class="fade-in" src="img/banner2.png" alt="office-junior banner">
-      </div>
-
+      <button id ="prevBtn">Prev</button>
+      <button id ="nextBtn">Next</button>
 
       <h1 style = "border-bottom: 1px solid #008e97; margin: auto; text-align:center; width: 80%; margin-top: 30px; color: #008e97;">Featured Products</h1>
       <div class= "featured-products-container">
@@ -142,24 +142,44 @@ function myFunction() {
   }
 }
 
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("img-banner-container");
-  //var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
+const carouselSlide = document.querySelector('.carousel-slide')
+const carouselImages = document.querySelectorAll('.carousel-slide img')
 
+//buttons
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
+let counter = 1;
+const size = carouselImages[0].clientWidth;
+console.log(size);
 
+carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+
+//Button Listeners
+
+nextBtn.addEventListener('click',() =>{
+   if(counter)
+    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    counter++;
+    carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+});
+
+prevBtn.addEventListener('click',() =>{
+    carouselSlide.style.transition = "transform 0.4s ease-in-out";
+    counter--;
+    carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+});
+
+carouselSlide.addEventListener('transitionend', () => {
+    console.log(counter)
+    if(carouselImages[counter].id === 'lastClone'){
+      console.log("test");
+        carouselSlide.style.transition = "none";
+        counter = carouselImages.length -2;
+        carouselSlide.style.transform = 'translateX('+(-size* counter) + 'px)';
+    }
+});
 
 
 </script>
