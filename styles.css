@@ -8,22 +8,27 @@
 
 }
 
+
+
 h1 {
   font-size: 28px;
 }
-
+.office-content {
+}
 body{
-   background-color: #F0F0F0;
    color: #F0F0F0;
+    background-color: #e3e3e3;
 }
 
 
 nav {
-  background-color: #008e97;
+  background-color: #17252a;
   top: 0;
   position: -webkit-sticky; /* Safari */
     position: sticky;
   z-index: 99;
+  width: 90%;
+  margin: auto;
 }
 
 nav li {
@@ -137,23 +142,23 @@ animation: fadeIn ease 1.5s;
 .featured-product-btn-container button{
   width: 100%;
   height: 40px;
-  background-color: #008e97;
-    border-radius: 4px;
-    border: 1px solid #F0F0F0;
-    color: #F0F0F0;
+  background-color: #2B7A78;
+  border-radius: 4px;
+  border: 1px solid #2B7A78;
+  color: #F0F0F0;
    outline:none;
    font-size: 14px;
 }
 
 .featured-product-btn-container button:hover{
-    background-color: #2ecc71;
+    background-color: #3AAFA9;
 }
 
 
 footer {
   bottom: 0px;
   width: 100%;
-  background-color: #008e97;
+  background-color: #2B7A78;
   color: #F0F0F0;
 
 }
@@ -219,7 +224,7 @@ footer {
 
 
 .center .content .fas {
-  background: #f38424;
+  background: #17252A;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -229,9 +234,6 @@ footer {
   cursor: pointer;
 }
 
-.center .content .fas:hover {
-  background: #f12020
-}
 
 .center .content .text{
   font-weight: 500;
@@ -261,7 +263,6 @@ footer {
   width:100%;
   border:none;
   outline:none;
-  background: :#f12020;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -269,18 +270,18 @@ footer {
 }
 
 .right form .btn button:hover{
-  background-color: #f12020;
+  background-color: #3AAFA9;
 }
 
 .bottom center{
  padding: 5px;
- font-size: 0.9375rem;
- background: #151515
+ background-color: #17252a;
 
 }
 
 .bottom center span{
   color: #656565;
+  font-size: 12px;
 }
 
 .right form input, .right form textarea {
@@ -379,9 +380,10 @@ footer {
   cursor: pointer;
   background: transparent;
   font-size: 30px;
+  background-color: grey;
   border: none;
   padding: 10px;
-  color: white;
+  color: #17252A;
 }
 #next-btn:focus,
 #prev-btn:focus {
@@ -442,6 +444,10 @@ footer {
   .container{
    height: 220px;
      width: 100%;
+  }
+
+  nav {
+      width: 100%;
   }
 
 
