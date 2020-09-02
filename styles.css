@@ -483,21 +483,27 @@ footer {
   margin: 10px;
 }
 
+.categories .category img {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
 
 .office-chairs{
-  background-color: red;
+
 }
 
 .office-tables{
-  background-color: blue;
+
 }
 
 .partitions{
-  background-color: orange;
+
 }
 
 .others {
-  background-color: green;
+
 }
 
 
@@ -593,6 +599,6 @@ footer {
   .featured-product-card  {
       margin: 0 auto 20px auto;
       min-width: 280px;
-      height: 46vh;
+      height: 44vh;
   }
 }
