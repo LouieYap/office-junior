@@ -321,7 +321,8 @@ footer {
 .right form .btn button{
   height:40px;
   width:100%;
-  border:none;
+border: 1px solid #222222;
+border-radius: 2px;
   outline:none;
   font-size: 16px;
   font-weight: 500;
@@ -480,7 +481,7 @@ footer {
 
 .categories .category {
   height: 350px;
-  min-width: 250px;
+  min-width: 280px;
   flex-basis: 20%;
   margin: 10px;
   border: 1px solid #008e97;
@@ -560,7 +561,7 @@ top: 20px;
   }
   .categories .category {
     flex-basis: 40%;
-    height: 320px
+    height: 300px
   }
 
 }
