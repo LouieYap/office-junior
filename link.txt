@@ -1,0 +1,1 @@
+            <button style="cursor: pointer; "type="button" onclick="location.href='mailto:sales.officejunior@gmail.com?&subject=Item%20Inquiry&body=Hi,%20is%20item%20ROHBI-DENVER%20available%3F';" name="INQUIRE">Details</button>

@@ -26,13 +26,13 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
 
 .our-services p{
- font-size: 18px;
+ font-size: 20px;
  line-height: 35px;
   color: grey;
   padding: 50px;
@@ -144,48 +144,71 @@ animation: fadeIn ease 1.5s;
 
 
 .featured-products-container {
-  margin-top: 15px;
-  margin-bottom: 15px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width:100%
+  margin: auto;
+width: 100%;
+justify-content: center;
+flex-wrap: wrap;
 }
 
 
-.featured-product-card  {
-  border: solid 1px #008e97;
-  position:relative;
-  margin: 0 40px 20px 40px;
-  background-color: grey;
-  min-width: 240px;
-  width: 22vw;
-  height: 52vh;
-  background-size: 100% 100%;
-  background-position: center;
-  background-image: url('img/featured-product1.png');
+.card {
+  border-radius: 19px;
+  margin:20px 40px 20px 40px;
+box-shadow: -1px 15px 30px -12px black;
+padding-top: 14px;
+  border: 2px solid #008e97;
+  text-align: center;
+  background-color: #F0F0F0;
 }
 
-.featured-product-btn-container{
-  position: absolute;
-  bottom: 30px;
-  right:5px;
-  width: 44%;
+
+
+.link1 {
+
+  border: 5px solid #EC9B3B;
+    background-color: #EC9B3B;
 }
-.featured-product-btn-container button{
+.link2 {
+
+    border:5px solid #4FACFF;
+      background-color: #4FACFF;
+}
+.link3 {
+
+    border: 5px solid #82BB30;
+    background-color: #82BB30;
+}
+
+.card-link{
+  height: 60px;
+  outline: 0;
+  border-radius: 0 0 17px 17px;
+}
+
+.card h1 {
+  color: #17252a;
+}
+
+
+.price {
+  color: black;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
-  height: 40px;
-  background-color: #2B7A78;
-  border-radius: 1px;
-  border: 1px solid #2B7A78;
-  color: #F0F0F0;
-   outline:none;
-   font-size: 14px;
+  font-size: 18px;
 }
 
-.featured-product-btn-container button:hover{
-    background-color: #3AAFA9;
+.card button:hover {
+  opacity: 0.7;
 }
 
 
@@ -486,6 +509,7 @@ border-radius: 2px;
   margin: 10px;
   border: 1px solid #008e97;
   position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
@@ -584,7 +608,7 @@ top: 20px;
 
     .our-services p{
     line-height: 20px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 15px;
     }
 
@@ -641,12 +665,8 @@ top: 20px;
 
 
 .featured-products-container {
-  display:block;
 
   }
   .featured-product-card  {
-      margin: 0 auto 20px auto;
-      min-width: 280px;
-      height: 44vh;
   }
 }
