@@ -105,4 +105,8 @@ $(document).ready(function(){
   $(".category-link").click(function(){
    $(".container2").load("office-chairs.html");
   });
+
+  $(".cabinet-link").click(function(){
+   $(".container2").load("office-cabinets.html");
+  });
 });
