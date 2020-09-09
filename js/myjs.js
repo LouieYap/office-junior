@@ -103,7 +103,6 @@ for (i = 0; i < caretDivs.length; i++) {
 
 $(document).ready(function(){
   $(".category-link").click(function(){
-    alert ("uy");
-   $(".product1").load("office-chairs.html");
+   $(".product").load("office-chairs.html");
   });
 });
