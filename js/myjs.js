@@ -103,10 +103,10 @@ for (i = 0; i < caretDivs.length; i++) {
 
 $(document).ready(function(){
   $(".category-link").click(function(){
-   $(".container2").load("office-chairs.html");
+   $(".container2").load("office-chairs.html").fadeIn(1000);
   });
 
   $(".cabinet-link").click(function(){
-   $(".container2").load("office-cabinets.html");
+   $(".container2").load("office-cabinets.html").fadeIn(1000);
   });
 });
