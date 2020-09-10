@@ -626,6 +626,7 @@ visibility: visible;
 .categories-sidebar{
       color: black;
       grid-area: Sidebar;
+      background-color: #ddd;
 
 }
 
@@ -676,7 +677,15 @@ visibility: visible;
 }
 
 .sub-categories {
-  display: none;
+    height: 0;
+    opacity: 0;
+    transition: all .3s ease;
+    background: #F0F0F0;
+}
+
+.sub-categories-display {
+  height: 70px;
+  opacity: 1;
 }
 
 .sub-categories a {
@@ -685,7 +694,6 @@ visibility: visible;
 
 .category-caret {
   float: right;
-  cursor:pointer
 }
 
 
@@ -694,13 +702,12 @@ visibility: visible;
   padding-left: 8px;
 }
 
-.category-link {
+.parent-category {
   cursor:pointer;
 }
 
-.cabinet-link{
-  cursor:pointer;
-}
+
+
 
 
 #loading {

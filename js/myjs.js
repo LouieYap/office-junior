@@ -82,17 +82,14 @@ prevBtn.addEventListener('click', moveToPreviousSlide);
 startSlide();
 
 // Categories js
-var caretDivs = document.getElementsByClassName("category-caret");
+var parent_category = document.getElementsByClassName("parent-category");
 var i;
-for (i = 0; i < caretDivs.length; i++) {
-  caretDivs[i].addEventListener("click", function() {
+for (i = 0; i < parent_category.length; i++) {
+  parent_category[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+
+    var dropdownContent = this.nextElementSibling
+    dropdownContent.classList.toggle("sub-categories-display");
   });
 }
 
