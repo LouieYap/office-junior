@@ -706,11 +706,13 @@ visibility: visible;
 #loading {
   position:relative;
   display:none;
+  height: 500px;
 }
 
 #loading-spinner{
   position: absolute;
   left: 50%;
+  top: 50%;
 
 }
 
