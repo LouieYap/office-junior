@@ -102,6 +102,17 @@ for (i = 0; i < caretDivs.length; i++) {
 //ajax
 
 $(document).ready(function(){
+
+  $('.container2')
+    .ajaxStart(function() {
+        alert("Start");
+    })
+    .ajaxStop(function() {
+          alert("Done");
+    })
+;
+
+
   $(".category-link").click(function(){
     $(".container2").animate({opacity: 0}, 50, 'linear', function(){
       $(".container2").load("office-chairs.html", function(responseTxt, statusTxt, jqXHR){
