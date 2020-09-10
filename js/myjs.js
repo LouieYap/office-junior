@@ -107,6 +107,6 @@ $(document).ready(function(){
   });
 
   $(".cabinet-link").click(function(){
-   $(".container2").fadeOut('slow');.load("office-cabinets.html").fadeIn('slow');
+   $(".container2").fadeOut('slow').load("office-cabinets.html").fadeIn('slow');
   });
 });
