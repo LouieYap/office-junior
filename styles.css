@@ -590,25 +590,9 @@ visibility: visible;
   font-size: 18px;
   font-weight: bold;
   position: relative;
-top: 20px;
+  top: 20px;
 }
 
-
-.office-chairs{
-
-}
-
-.office-tables{
-
-}
-
-.partitions{
-
-}
-
-.others {
-
-}
 
 
 
@@ -719,7 +703,16 @@ top: 20px;
 }
 
 
+#loading {
+  position:relative;
+  display:none;
+}
 
+#loading-spinner{
+  position: absolute;
+  left: 50%;
+
+}
 
 
 
