@@ -103,7 +103,7 @@ for (i = 0; i < caretDivs.length; i++) {
 
 $(document).ready(function(){
   $(".category-link").click(function(){
-   $(".container2").fadeOut('slow');
+   $(".container2").fadeOut('fast');
     $(".container2").load("office-chairs.html", function(responseTxt, statusTxt, jqXHR){
       if(statusTxt == "success"){
              $(".container2").fadeIn('slow');
@@ -113,12 +113,12 @@ $(document).ready(function(){
 
   $(".cabinet-link").click(function(){
 
-    $(".container2").fadeOut('slow');
+    $(".container2").fadeOut('fast');
      $(".container2").load("office-cabinets.html", function(responseTxt, statusTxt, jqXHR){
        if(statusTxt == "success"){
               $(".container2").fadeIn('slow');
        }
      });
-  
+
   });
 });
