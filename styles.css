@@ -679,11 +679,13 @@ visibility: visible;
 .sub-categories {
     height: 0;
     opacity: 0;
+    visibility: hidden;
     transition: all .3s ease;
     background: #F0F0F0;
 }
 
 .sub-categories-display {
+      visibility: visible;
   height: 70px;
   opacity: 1;
 }
