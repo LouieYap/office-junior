@@ -102,7 +102,7 @@ for (i = 0; i < caretDivs.length; i++) {
 //ajax
 $(document)
   .ajaxStart(function () {
-    alert("test start");
+    $(".container2").load("spinner.html");
   })
   .ajaxStop(function () {
     alert("test end");
