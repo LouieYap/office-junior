@@ -103,7 +103,7 @@ for (i = 0; i < caretDivs.length; i++) {
 
 $(document).ready(function(){
   $(".category-link").click(function(){
-    $(".container2").animate({opacity: 0}, 1000, 'linear', function(){
+    $(".container2").animate({opacity: 0}, 100, 'linear', function(){
       $(".container2").load("office-chairs.html", function(responseTxt, statusTxt, jqXHR){
         if(statusTxt == "success"){
                  $(".container2").animate({opacity: 1});
@@ -113,7 +113,7 @@ $(document).ready(function(){
   });
 
   $(".cabinet-link").click(function(){
-    $(".container2").animate({opacity: 0}, 1000, 'linear', function(){
+    $(".container2").animate({opacity: 0}, 100, 'linear', function(){
       $(".container2").load("office-cabinets.html", function(responseTxt, statusTxt, jqXHR){
         if(statusTxt == "success"){
                  $(".container2").animate({opacity: 1});
