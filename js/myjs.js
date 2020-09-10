@@ -100,17 +100,15 @@ for (i = 0; i < caretDivs.length; i++) {
 
 
 //ajax
+$(document)
+  .ajaxStart(function () {
+    alert("test start");
+  })
+  .ajaxStop(function () {
+    alert("test end");
+  });
 
 $(document).ready(function(){
-
-  $('.container2')
-    .ajaxStart(function() {
-        alert("Start");
-    })
-    .ajaxStop(function() {
-          alert("Done");
-    })
-;
 
 
   $(".category-link").click(function(){
