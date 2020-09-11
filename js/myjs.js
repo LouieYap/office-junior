@@ -112,8 +112,7 @@ $(document)
 
 $(document).ready(function(){
 
-
-  $(".category-link").click(function(){
+  $(".office-chairs-category").click(function(){
     $(".container2").animate({opacity: 0}, 50, 'linear', function(){
       $(".container2").load("office-chairs.html", function(responseTxt, statusTxt, jqXHR){
         if(statusTxt == "success"){
@@ -123,9 +122,74 @@ $(document).ready(function(){
   });
   });
 
-  $(".cabinet-link").click(function(){
+
+  $(".office-tables-category").click(function(){
     $(".container2").animate({opacity: 0}, 50, 'linear', function(){
-      $(".container2").load("office-cabinets.html", function(responseTxt, statusTxt, jqXHR){
+      $(".container2").load("office-tables.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+
+  $(".executive-tables").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("executive-tables.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+
+  $(".meeting-tables").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("meeting-tables.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+
+
+  $(".clerical-tables").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("clerical-tables.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+  $(".multiple-tables").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("multiple-tables.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+  $(".cabinets").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("cabinets.html", function(responseTxt, statusTxt, jqXHR){
+        if(statusTxt == "success"){
+                 $(".container2").animate({opacity: 1});
+        }
+    });
+  });
+  });
+
+  $(".workstations").click(function(){
+    $(".container2").animate({opacity: 0}, 50, 'linear', function(){
+      $(".container2").load("workstations.html", function(responseTxt, statusTxt, jqXHR){
         if(statusTxt == "success"){
                  $(".container2").animate({opacity: 1});
         }

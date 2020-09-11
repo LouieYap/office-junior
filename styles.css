@@ -632,7 +632,7 @@ visibility: visible;
       grid-area: Sidebar;
       background-color: lightgrey;
       padding: 20px;
-      margin :20px;
+      margin-bottom :20px;
 }
 
 .product{
@@ -691,26 +691,43 @@ visibility: visible;
 
 .sub-categories-display {
   visibility: visible;
-  height: 70px;
+  height: 150px;
   opacity: 1;
 }
 
 .sub-categories a {
   display: block;
+  padding-top: 4px;
+  padding-left: 12px;
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 .category-caret {
-  float: right;
+  display:inline;
+  margin-left: 10px;
+    cursor:pointer;
+}
+
+.category-link {
+  cursor:pointer;
+
+}
+.category-link:hover {
+  text-decoration: underline;
 }
 
 
-
-.sub-categories a {
-  padding-left: 8px;
+.sub-categories a:hover {
+  opacity: 1;
 }
 
 .parent-category {
-  cursor:pointer;
+    margin-bottom: 5px;
+}
+
+.sub-category {
+cursor:pointer;
 }
 
 
