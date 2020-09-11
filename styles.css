@@ -6,6 +6,9 @@
   box-sizing: border-box;
 }
 
+h4 {
+  text-align: center;
+}
 .gmap_canvas {
   min-width: 200px;
 }
@@ -620,14 +623,16 @@ visibility: visible;
  grid-gap: 10px 10px;
  width: 90%;
  margin: auto;
+
  justify-content: center;
 }
 
 .categories-sidebar{
       color: black;
       grid-area: Sidebar;
-      background-color: #ddd;
-
+      background-color: #4FACFF;
+      padding: 20px;
+      margin-bottom:20px;
 }
 
 .product{

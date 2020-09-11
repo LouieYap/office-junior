@@ -113,7 +113,7 @@ $(document)
 $(document).ready(function(){
 
 
-  $(".category-link").click(function(){
+  $(".parent-category").click(function(){
     $(".container2").animate({opacity: 0}, 50, 'linear', function(){
       $(".container2").load("office-chairs.html", function(responseTxt, statusTxt, jqXHR){
         if(statusTxt == "success"){
