@@ -86,10 +86,15 @@ var parent_category = document.getElementsByClassName("category-caret");
 var i;
 for (i = 0; i < parent_category.length; i++) {
   parent_category[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+
 
     var dropdownContent = $(this).parent().next()[0];
     dropdownContent.classList.toggle("sub-categories-display");
+    if ($(this).children().hasClass('fa-caret-down')) {
+      $(this).children().removeClass('fa-caret-down').addClass('fa-caret-up');
+    } else {
+      $(this).children().removeClass('fa-caret-up').addClass('fa-caret-down');
+    }
   });
 }
 
