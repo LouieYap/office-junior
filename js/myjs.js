@@ -81,14 +81,14 @@ prevBtn.addEventListener('click', moveToPreviousSlide);
 
 startSlide();
 
-// Categories js
-var parent_category = document.getElementsByClassName("parent-category");
+// Categories
+var parent_category = document.getElementsByClassName("category-caret");
 var i;
 for (i = 0; i < parent_category.length; i++) {
   parent_category[i].addEventListener("click", function() {
     this.classList.toggle("active");
 
-    var dropdownContent = this.nextElementSibling
+    var dropdownContent = $(this).parent().next()[0];
     dropdownContent.classList.toggle("sub-categories-display");
   });
 }
