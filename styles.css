@@ -610,6 +610,7 @@ visibility: visible;
     width: 90%;
     margin: auto;
     justify-content: center;
+     grid-auto-flow: dense;
 }
 
 
@@ -620,9 +621,10 @@ visibility: visible;
  grid-template-areas:"Product1 Product2 Product3"
  "Product4 Product5 Product6"
  "Product7 Product8 Product9";
- grid-gap: 10px 10px;
+ grid-gap: 20px 20px;
  width: 90%;
  margin: auto;
+   grid-auto-flow: dense;
 
  justify-content: center;
 }
@@ -635,9 +637,30 @@ visibility: visible;
       margin-bottom :20px;
 }
 
+.product h4 {
+  color: #404040;
+  text-align: center;
+  font-weight: bold;
+}
+
+.product h5 {
+  color: #404040;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.product p {
+  margin-top: 5px;
+  color: #008e97;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .product{
   background-color: #F0F0F0;
-  border: 1px solid black;
 }
 
 .product1 {
@@ -646,7 +669,6 @@ visibility: visible;
 
 .product img {
   width:100%;
-  height: 100%;
 }
 
 .product2 {
