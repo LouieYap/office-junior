@@ -601,7 +601,7 @@ visibility: visible;
 
 .grid-container{
   display: grid;
-  grid-template-columns: 300px 1200px;
+  grid-template-columns: minmax(0px, 300px) minmax(400px, 1200px);
   grid-template-rows: 1fr;
   grid-template-areas:"Sidebar . . ."
   "Sidebar . . ."
@@ -616,8 +616,8 @@ visibility: visible;
 
 .container2 {
  display:grid;
- grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px 300px;
+ grid-template-columns: 28% 28% 28%;
+  grid-template-rows: 32% 32% 32%;
  grid-template-areas:"Product1 Product2 Product3"
  "Product4 Product5 Product6"
  "Product7 Product8 Product9";
