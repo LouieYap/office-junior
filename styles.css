@@ -606,8 +606,8 @@ visibility: visible;
   grid-template-areas:"Sidebar . . ."
   "Sidebar . . ."
   "Sidebar . . .";
-    grid-gap: 10px 40px;
-    width: 90%;
+    grid-gap: 10px 10px;
+    width: 100%;
     margin: auto;
     justify-content: center;
      grid-auto-flow: dense;
@@ -622,7 +622,7 @@ visibility: visible;
  "Product4 Product5 Product6"
  "Product7 Product8 Product9";
  grid-gap: 20px 20px;
- width: 90%;
+ width: 100%;
  margin: auto;
    grid-auto-flow: dense;
 
