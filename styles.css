@@ -826,7 +826,7 @@ cursor:pointer;
 
 @media (min-width:320px)  {
   #loading-spinner {
-      top: 100px;
+      top: 200px;
   }
   .category-burger {
     visibility: visible;
