@@ -8,6 +8,16 @@ function myFunction() {
   }
 }
 
+function categoryFunction() {
+  var y = document.getElementsByClassName("category");
+   if (y[0].className === "category") {
+    y[0].className +=" category-display";
+  } else {
+    y[0].className = "category";
+  }
+}
+
+
 const slideContainer = document.querySelector('.container');
 const slide = document.querySelector('.slides');
 const nextBtn = document.getElementById('next-btn');
