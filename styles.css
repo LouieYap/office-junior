@@ -735,7 +735,6 @@ cursor:pointer;
 #loading-spinner{
   position: absolute;
   left: 50%;
-  bottom: 50%;
 }
 
 
@@ -826,7 +825,7 @@ cursor:pointer;
 
 @media (min-width:320px)  {
   #loading-spinner {
-      top: 200px;
+      top: 500px;
   }
   .category-burger {
     visibility: visible;
@@ -883,6 +882,10 @@ cursor:pointer;
  }
 @media (min-width:641px)  {
 
+  #loading-spinner {
+      top: 200px;
+  }
+
   .category-burger {
         visibility: hidden;
         padding-right: 0;
@@ -926,7 +929,9 @@ cursor:pointer;
 
  }
 @media (min-width:961px)  {
-
+  #loading-spinner {
+      top: 200px;
+  }
   .category-burger {
         visibility: hidden;
         padding-right: 0;
