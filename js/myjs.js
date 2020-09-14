@@ -9,11 +9,11 @@ function myFunction() {
 }
 
 function categoryFunction() {
-  var y = document.getElementsByClassName("category");
-   if (y[0].className === "category") {
+  var y = document.getElementsByClassName("category-container");
+   if (y[0].className === "category-container") {
     y[0].className +=" category-display";
   } else {
-    y[0].className = "category";
+    y[0].className = "category-container";
   }
 }
 
