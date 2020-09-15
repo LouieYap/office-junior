@@ -625,6 +625,7 @@ visibility: visible;
 
 .product{
   background-color: #F0F0F0;
+  padding-bottom: 10px;
 }
 
 .product1 {
@@ -783,7 +784,7 @@ visibility: visible;
 
 .product-image {
   flex-basis: 30%;
-  min-width: 250px;
+  min-width: 400px;
   height: 450px;
 }
 
@@ -810,12 +811,21 @@ visibility: visible;
 .product-details .price {
 color: #008e97;
 text-align: center;
-font-size: 18px;
+font-size: 20px;
 font-weight: bold;
 }
 
+.related-product-details .price {
+color: #008e97;
+text-align: center;
+font-size: 14px;
+font-weight: bold;
+}
+
+
+
 .product-details .desc {
-  font-size: 18px;
+  font-size: 16px;
   color: #17252a;
     padding: 20px;
     line-height: 1.6em;
@@ -824,10 +834,10 @@ font-weight: bold;
 .product-details button {
 
   position: absolute;
-  width: 60%;
-  height: 55px;
+  width: 50%;
+  height: 50px;
   margin: auto;
-  bottom: 5%;
+  bottom: 2%;
   left: 50%;
   transform: translate(-50%, 0);
   background-color: #2B7A78;
@@ -848,9 +858,9 @@ font-weight: bold;
   display: flex;
   justify-content: center;
   width: 90%;
-  height: 400px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 
 
 }
@@ -858,12 +868,91 @@ font-weight: bold;
 .related-product {
   flex-basis: 20%;
   margin: 20px;
+  position: relative;
+  height: 300px;
+}
+
+.related-product:hover img {
+  opacity: 0.4;
 }
 
 .related-product img {
 width:100%;
 height: 100%;
 }
+
+.related-product-details  h1 {
+  font-size: 16px;
+    color: #17252a;
+    text-align: center;
+}
+
+
+.related-product .view-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+
+}
+
+
+
+
+
+.related-product .view-btn button {
+
+visibility: hidden;
+width: 150px;
+height:40px;
+background-color: #2B7A78;
+border:none;
+border-radius: 3px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+color: #F0F0F0;
+
+
+}
+.related-product:hover .view-btn button {
+
+visibility: visible;
+
+}
+
+.available-colors {
+  padding-left: 20px;
+}
+.available {
+    color: #17252a;
+    padding-left: 20px;
+
+}
+
+
+.available-color {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.available-colors .black {
+  background-color: black;
+}
+.available-colors .grey {
+    background-color: grey;
+}
+
+.available-colors .brown {
+    background-color: 	saddlebrown;
+}
+
+.available-colors .blue {
+    background-color: blue;
+}
+
 
 
 @media screen and (max-width: 1100px) {
@@ -950,6 +1039,8 @@ height: 100%;
 
 
 @media (min-width:320px)  {
+
+
   #loading-spinner {
       top: 500px;
   }
@@ -1055,6 +1146,7 @@ height: 100%;
 
  }
 @media (min-width:961px)  {
+
   #loading-spinner {
       top: 200px;
   }
