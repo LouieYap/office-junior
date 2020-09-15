@@ -1154,6 +1154,10 @@ visibility: visible;
  }
 @media (min-width:961px)  {
 
+  .related-product {
+    flex-basis: 35%;
+  }
+
   #loading-spinner {
       top: 200px;
   }
@@ -1194,5 +1198,14 @@ visibility: visible;
 
    justify-content: center;
   }
+
+}
+
+
+@media (min-width:1367px)  {
+  .related-product {
+    flex-basis: 20%;
+  }
+
 
 }
