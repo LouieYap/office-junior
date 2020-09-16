@@ -147,9 +147,6 @@ margin-bottom: 40px;
 
 
 .card {
-  border-radius: 19px;
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 19px;
   margin:20px 40px 20px 40px;
 box-shadow: -1px 15px 30px -12px black;
 padding-top: 14px;
@@ -160,8 +157,8 @@ padding-top: 14px;
 }
 
 .card-desc h1 {
-  font-size: 24px;
-  padding: 20px;
+  font-size: 16px;
+  padding: 5px;
 }
 
 
@@ -579,7 +576,6 @@ visibility: visible;
 .categories .category .category-controls {
   position: absolute;
   width: 100%;
-  border-top: 1px dotted #008e97;
   bottom: 40px;
     text-align: center;
 }
@@ -809,7 +805,7 @@ visibility: visible;
 .product-details .price {
 color: #008e97;
 text-align: center;
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
 }
 
@@ -820,6 +816,16 @@ font-size: 14px;
 font-weight: bold;
 }
 
+.card-desc .price {
+  color: #008e97;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-desc {
+  margin-bottom: 10px;
+}
 
 
 .product-details .desc {
@@ -1025,6 +1031,7 @@ visibility: visible;
 
 
 
+/*Media Queries*/
 @media (min-width:320px)  {
 
   .categories .category {
@@ -1044,7 +1051,10 @@ visibility: visible;
     font-size: 12px;
   }
 
-
+.categories .category .category-controls .category-name {
+  top: 25px;
+  font-size: 14px;
+}
 
 
   .product-image {
@@ -1116,6 +1126,24 @@ visibility: visible;
     margin: 5px;
   }
 
+
+  .categories .category .category-btn button{
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .fa-arrow-right {
+    font-size: 14px;
+  }
+
+.categories .category .category-controls .category-name {
+  font-size: 16px;
+}
+
+
+
+
   .product-image {
     height: 450px;
   }
@@ -1172,6 +1200,10 @@ visibility: visible;
     flex-basis: 20%;
     height: 350px;
     margin: 5px;
+  }
+
+  .categories .category .category-controls .category-name {
+    font-size: 18px;
   }
 
 
