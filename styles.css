@@ -1034,6 +1034,16 @@ visibility: visible;
     margin: 5px;
   }
 
+  .categories .category .category-btn button{
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .fa-arrow-right {
+    font-size: 12px;
+  }
+
 
 
 
@@ -1100,6 +1110,12 @@ visibility: visible;
  }
 @media (min-width:641px)  {
 
+  .categories .category {
+    flex-basis: 40%;
+    height: 300px;
+    margin: 5px;
+  }
+
   .product-image {
     height: 450px;
   }
@@ -1152,6 +1168,12 @@ visibility: visible;
 
  }
 @media (min-width:961px)  {
+  .categories .category {
+    flex-basis: 20%;
+    height: 350px;
+    margin: 5px;
+  }
+
 
   .related-product {
     flex-basis: 35%;
